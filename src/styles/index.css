@@ -1,0 +1,4 @@
+/* Import all stylesheets */
+@import './theme.css';
+@import './animations.css';
+@import './components.css';

@@ -1,0 +1,212 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-form-section {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 33.333333%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.college-logo {
+  height: 4rem;
+}
+
+.register-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-field {
+  width: 50%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+}
+
+.input-field.error {
+  border-color: #dc3545;
+  background-color: #fff8f8;
+}
+
+.gender-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gender-label {
+  font-weight: 500;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gender-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.register-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.register-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.register-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  margin-top: 0.5rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.google-button i {
+  height: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.illustration-section {
+  display: none;
+  width: 50%;
+}
+
+.illustration-section img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .register-container {
+    flex-direction: row;
+  }
+
+  .illustration-section {
+    display: block;
+  }
+}
+
+/* Modal Styles */
+.registration-success-modal .modal-content {
+  border-radius: 15px;
+  border: none;
+}
+
+.registration-success-modal .modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.registration-success-modal .modal-body {
+  padding: 30px;
+}
+
+.registration-success-modal .modal-footer {
+  border-top: none;
+  padding-top: 0;
+}
+
+.registration-success-modal .modal-title {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.registration-success-modal .fa-check-circle {
+  color: #10b981;
+}
+
+.registration-success-modal .btn-primary {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.registration-success-modal .btn-primary:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+/* Toast Customization */
+.Toastify__toast {
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.Toastify__toast--success {
+  background-color: #28a745;
+}
+
+.Toastify__toast--error {
+  background-color: #dc3545;
+}
